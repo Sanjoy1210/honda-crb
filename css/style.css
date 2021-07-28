@@ -16,6 +16,31 @@ body {
 .hero-area {
     background-color: #264653;
 }
+
+.honda-purchase-btn {
+    background-color: #E76F51;
+}
+
+
+/* ================================
+        Featured section style
+===================================*/
+.highlight {
+    color: #E76F51;
+}
+
+.underline {
+    display: inline-block;
+    width: 58px;
+    height: 2px;
+    background-color: #E76F51;
+}
+
+.bike {
+    line-height: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
 .ac {
     font-family: 'Inter', sans-serif;
 }
@@ -23,5 +48,5 @@ body {
 .client img {
     width: 158px;
     height: 162px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 }
