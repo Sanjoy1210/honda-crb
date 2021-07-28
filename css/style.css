@@ -17,16 +17,34 @@ body {
     background-color: #264653;
 }
 
+.banner-content p:first-child {
+    font-size: 14px;
+    /* width: 480px; */
+}
+
 .honda-purchase-btn {
     background-color: #E76F51;
 }
 
+.title {
+    color: #18191F;
+}
 
 /* ================================
         Featured section style
 ===================================*/
 .highlight {
     color: #E76F51;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.feature-area p {
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .underline {
@@ -41,12 +59,45 @@ body {
     margin-bottom: 0;
     margin-top: 15px;
 }
-.ac {
-    font-family: 'Inter', sans-serif;
+
+.grayscale-effect img {
+    filter: grayscale(100%);
 }
 
+/* ================================
+        Client Section Style
+===================================*/
 .client img {
     width: 158px;
     height: 162px;
     /* border: 1px solid gray; */
 }
+.single-item h5 {
+    font-size: 14px;
+    color: #23A6F0;
+    font-weight: 600;
+}
+
+.designation {
+    font-size: 14px;
+    font-weight: 600;
+}
+.fill-color {
+    color: #E77C40;
+}
+
+.empty {
+    color: #E77C40;
+}
+
+/* ===============================
+        Faq section style
+==================================*/
+.btn-outline,
+.btn-outline:focus {
+    border-color: black;
+}
+.ac {
+    font-family: 'Inter', sans-serif;
+}
+

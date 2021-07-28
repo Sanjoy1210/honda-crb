@@ -24,17 +24,56 @@
     <header class="hero-area vh-100">
 
         <!-- Hero Section start -->
-        <section>
+        <section class="banner-area">
             <div class="container">
                 <div class="row d-flex justify-content-between align-items-center">
                     <div class="col-md-5 text-white d-flex align-items-center">
                         <div class="pe-3 banner-content">
                             <p>Computer-controlled digital transistorized with electronic advance</p>
-                            <h1 class="fw-bold">Honda CBR 300R</h1>
+                            <h1 class="section-title mb-3">Honda CBR 300R</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus dignissimos quas
                                 maxime! Quam voluptate assumenda repellendus, ex sint maiores nostrum similique dolor
                             </p>
-                            <button class="btn text-white honda-purchase-btn py-2 px-5">Purchase</button>
+
+                            <!-- Purchase button with modal -->
+                            <button type="button" class="btn text-white honda-purchase-btn py-2 px-5 mt-3"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                data-bs-whatever="@honda">Purchase</button>
+
+                            <!-- Modal content area start -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title title" id="exampleModalLabel">New message</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="recipient-name"
+                                                        class="col-form-label title">Recipient:</label>
+                                                    <input type="text" class="form-control" id="recipient-name"
+                                                        placeholder="@honda">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text"
+                                                        class="col-form-label title">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal content area end -->
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -54,16 +93,16 @@
     <main>
 
         <!-- featured bike section start -->
-        <section>
+        <section class="feature-area">
             <div class="container px-4 my-5">
                 <div class="text-center mb-5">
-                    <h1 class="fw-bold">Fetured Bikes 2021</h1>
-                    <p class="highlight fw-bold bike">Best bike collection</p>
+                    <h1 class="section-title">Fetured Bikes 2021</h1>
+                    <p class="highlight bike">Best bike collection</p>
                     <span class="underline"></span>
                 </div>
                 <div class="row g-5">
                     <div class="col-12 col-md-4">
-                        <div class="p-3">
+                        <div class="p-3 grayscale-effect">
                             <img class="img-fluid" src="images/feature-bike.jpg" alt="Feature Bike">
                         </div>
                     </div>
@@ -73,7 +112,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="p-3">
+                        <div class="p-3 grayscale-effect">
                             <img class="img-fluid" src="images/feature-bike.jpg" alt="Feature Bike">
                         </div>
                     </div>
@@ -86,9 +125,10 @@
         <!-- clients section start -->
         <section>
             <div class="container">
-                <h1 class="fw-bold mb-5 text-center">Happy <span class="highlight">Clients says</span></h1>
+                <h1 class="mb-5 text-center section-title">Happy <span class="highlight">Clients says</span>
+                </h1>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 single-item">
                         <div class="card h-100 p-3 rounded">
                             <div class=" w-50 mx-auto pb-3 client">
                                 <img class="card-img-top" src="images/user-1.png" alt="Client 1">
@@ -97,18 +137,18 @@
                                 <p class="card-text">Slate helps you see how many more days you need to work to reach
                                     your financial goal for the month and year.</p>
                                 <div class="my-3">
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="far fa-star empty"></i>
                                 </div>
                                 <h5 class="card-title mb-3">Regina Miles</h5>
-                                <p>Banker</p>
+                                <p class="designation">Banker</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 single-item">
                         <div class="card h-100 p-3 rounded">
                             <div class=" w-50 mx-auto pb-3 client">
                                 <img class="card-img-top" src="images/user-2.png" alt="Client 1">
@@ -117,18 +157,18 @@
                                 <p class="card-text">Slate helps you see how many more days you need to work to reach
                                     your financial goal for the month and year.</p>
                                 <div class="my-3">
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="far fa-star empty"></i>
                                 </div>
                                 <h5 class="card-title mb-3">Regina Miles</h5>
-                                <p>Banker</p>
+                                <p class="designation">Banker</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 single-item">
                         <div class="card h-100 p-3 rounded">
                             <div class=" w-50 mx-auto pb-3 client">
                                 <img class="card-img-top rounded-circle" src="images/user-3.jpg" alt="Client 1">
@@ -137,14 +177,14 @@
                                 <p class="card-text">Slate helps you see how many more days you need to work to reach
                                     your financial goal for the month and year.</p>
                                 <div class="my-3">
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="fas fa-star fill-color"></i>
+                                    <i class="far fa-star empty"></i>
                                 </div>
                                 <h5 class="card-title mb-3">Regina Miles</h5>
-                                <p>Banker</p>
+                                <p class="designation">Banker</p>
                             </div>
                         </div>
                     </div>
@@ -157,7 +197,8 @@
         <!-- faq section start -->
         <section>
             <div class="container my-5">
-                <h1 class="text-center mb-5">Frequently Asked <span class="highlight">Questions</span></h1>
+                <h1 class="text-center mb-5 section-title">Frequently Asked <span class="highlight">Questions</span>
+                </h1>
                 <div class="row d-flex justify-content-between">
                     <div class="col-md-5">
                         <div class="w-100">
@@ -168,8 +209,9 @@
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button class="accordion-button bg-white text-dark" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
                                         What are the most important things I should know about riding a bike?
                                     </button>
                                 </h2>
@@ -188,8 +230,9 @@
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="accordion-button collapsed bg-white text-dark" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
                                         How can I tell if my helmet is old and I need a new one?
                                     </button>
                                 </h2>
@@ -208,8 +251,8 @@
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                    <button class="accordion-button collapsed bg-white text-dark" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
                                         My bike has been in storage is it safe to ride?
                                     </button>
@@ -229,9 +272,9 @@
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
+                                    <button class="accordion-button collapsed bg-white text-dark btn-outline-danger"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
                                         What rules should I follow when riding my bike?
                                     </button>
                                 </h2>
