@@ -165,6 +165,23 @@ body {
     box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
 }
 
+/* ==========================
+        Footer area style
+=============================*/
+.footer {
+    background-color: #0B0D17;
+    color: #fff;
+}
+
+.list a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 24px;
+}
+.footer-icons h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
 .ac {
     font-family: 'Inter', sans-serif;
 }
