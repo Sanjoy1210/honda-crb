@@ -97,6 +97,15 @@ body {
 .btn-outline:focus {
     border-color: black;
 }
+
+
+/* ===============================
+        Upcoming Section style
+==================================*/
+.bike-slider img {
+    height: 420px;
+    /* object-fit: cover; */
+}
 .ac {
     font-family: 'Inter', sans-serif;
 }
