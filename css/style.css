@@ -18,6 +18,10 @@ body {
     background-color: #264653;
 }
 
+.menu {
+    padding: 40px 0 45px 0;
+}
+
 .banner-content p:first-child {
     font-size: 14px;
     /* width: 480px; */
@@ -66,9 +70,45 @@ body {
     filter: grayscale(100%);
 }
 
+
+/* ================================
+        Latest News section style
+===================================*/
+.single-card-item,
+.signle-client,
+.info,
+.email-form {
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.single-latest-news-body {
+    padding: 40px 0;
+}
+
+.letest-section-title {
+    color: #18191F;
+    font-weight: 600;
+}
+
+.read-more-btn,
+.login-btn {
+    color: #E76F51;
+    border: 1px solid #E76F51;
+}
+
+.read-more-btn:hover,
+.login-btn:hover {
+    color: #fff;
+    background-color: #E76F51;
+}
+
 /* ================================
         Client Section Style
 ===================================*/
+.signle-client {
+    padding: 40px 35px;
+}
 .client img {
     width: 150px;
     height: 150px;
@@ -99,7 +139,6 @@ body {
 .btn-outline:focus {
     border-color: black;
 }
-
 
 /* ===============================
         Upcoming Section style
@@ -171,6 +210,10 @@ body {
 .footer {
     background-color: #0B0D17;
     color: #fff;
+}
+
+.footer-content {
+    margin-top: 56px;
 }
 
 .list a {

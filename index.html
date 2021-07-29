@@ -23,16 +23,47 @@
     <!-- Header area start -->
     <header class="hero-area vh-100">
 
+        <!-- navbar area start -->
+        <nav class="navbar navbar-expand-lg navbar-light menu">
+            <div class="container">
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white fs-4"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link read-more-btn py-2 px-4 rounded text-white" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar area end -->
+
         <!-- Hero Section start -->
         <section class="banner-area">
             <div class="container">
                 <div class="row d-flex justify-content-between align-items-center">
                     <div class="col-md-5 text-white d-flex align-items-center">
                         <div class="pe-3 banner-content">
-                            <p>Computer-controlled digital transistorized with electronic advance</p>
+                            <p>Hi-Performance Four Cylinder Engine</p>
                             <h1 class="section-title mb-3">Honda CBR 300R</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus dignissimos quas
-                                maxime! Quam voluptate assumenda repellendus, ex sint maiores nostrum similique dolor
+                            <p>The 2021 Honda CBR150R has been launched in Indonesia. The updated model comes with a
+                                much more aggressive bodywork similar to the Honda CBR250RR.
                             </p>
 
                             <!-- Purchase button with modal -->
@@ -93,8 +124,8 @@
     <main>
 
         <!-- featured bike section start -->
-        <section class="feature-area">
-            <div class="container px-4 my-5">
+        <section class="feature-area py-5">
+            <div class="container px-4">
                 <div class="text-center mb-5">
                     <h1 class="section-title">Fetured Bikes 2021</h1>
                     <p class="highlight bike">Best bike collection</p>
@@ -122,19 +153,77 @@
         <!-- featured bike section end -->
 
 
+        <!-- Latest News section start -->
+        <section class="latest-news py-5">
+            <div class="container">
+                <h1 class="section-title text-center mb-5">Latest News</h1>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 p-3 single-card-item border-0">
+                            <img src="images/bike-1.png" class="card-img-top" alt="Honda Bike">
+                            <div class="card-body single-latest-news-body">
+                                <h5 class="card-title fs-4 letest-section-title">Ducati XDIAVEL S-73</h5>
+                                <p class="card-text">The design of both the variants in terms of the engine, handling
+                                    and aerodynamics. The fact that the engine and
+                                    chassis technology of the RC213V-S ‘street-legal MotoGP machine’</p>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn read-more-btn py-2 px-4">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 p-3 single-card-item border-0">
+                            <img src="images/bike-2.png" class="card-img-top" alt="...">
+                            <div class="card-body single-latest-news-body">
+                                <h5 class="card-title fs-4 letest-section-title">Motorcycles & Scooters</h5>
+                                <p class="card-text">The CBR1000RR-R Fireblade is equipped with winglets which
+                                    effectively generate downforce at track speeds. Three wings are installed in each of
+                                    the right and left ducts in order to address downforces.</p>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn read-more-btn py-2 px-4">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 p-3 single-card-item border-0">
+                            <img src="images/bike-3.png" class="card-img-top" alt="...">
+                            <div class="card-body single-latest-news-body">
+                                <h5 class="card-title fs-4 letest-section-title">2021 Honda CBR500R</h5>
+                                <p class="card-text">Honda is one of the top motorcycle manufacturers in the world. It
+                                    is also considered as one of the Japanese giants. Honda Grom, Honda CB series are
+                                    few of the most popular motorcycle series in the
+                                    world.</p>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn read-more-btn py-2 px-4">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Latest News section end -->
+
+
         <!-- clients section start -->
-        <section>
+        <section class="clients-section py-5">
             <div class="container">
                 <h1 class="mb-5 text-center section-title">Happy <span class="highlight">Clients says</span>
                 </h1>
-                <div class="row g-4">
+                <div class="row g-5">
                     <div class="col-md-4 single-item">
-                        <div class="card h-100 p-3 rounded">
+                        <div class="card h-100 rounded border-0 signle-client">
                             <div class="mx-auto pb-3 client">
                                 <img class="card-img-top" src="images/user-1.png" alt="Client 1">
                             </div>
                             <div class="card-body text-center">
-                                <p class="card-text">Slate helps you see how many more days you need to work to reach
+                                <p class="card-text text-center">Slate helps you see how many more days you need to work
+                                    to reach
                                     your financial goal for the month and year.</p>
                                 <div class="my-3">
                                     <i class="fas fa-star fill-color"></i>
@@ -149,7 +238,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 single-item">
-                        <div class="card h-100 p-3 rounded">
+                        <div class="card h-100 rounded border-0 signle-client">
                             <div class="mx-auto pb-3 client">
                                 <img class="card-img-top" src="images/user-2.png" alt="Client 1">
                             </div>
@@ -169,7 +258,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 single-item">
-                        <div class="card h-100 p-3 rounded">
+                        <div class="card h-100 rounded border-0 signle-client">
                             <div class="mx-auto pb-3 client">
                                 <img class="card-img-top rounded-circle" src="images/user-3.jpg" alt="Client 1">
                             </div>
@@ -195,11 +284,11 @@
 
 
         <!-- faq section start -->
-        <section>
+        <section class="faq-section py-5">
             <div class="container my-5">
                 <h1 class="text-center mb-5 section-title">Frequently Asked <span class="highlight">Questions</span>
                 </h1>
-                <div class="row d-flex justify-content-between">
+                <div class="row d-flex justify-content-between g-5 g-md-0">
                     <div class="col-md-5">
                         <div class="w-100">
                             <img class="img-fluid" src="images/faq.png" alt="Faq Image">
@@ -302,10 +391,10 @@
         <!-- Extra Section Start -->
 
         <!-- Upcoming bike section start -->
-        <section class="upcoming-bikes">
+        <section class="upcoming-bikes my-5">
             <div class="container bike-slider pb-5 text-white">
                 <h1 class="py-5 text-center section-title text-white">Upcoming Bikes</h1>
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide bike-carousel" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item banner overflow-hidden active">
                             <div
@@ -367,7 +456,7 @@
 
 
         <!-- contact us section start -->
-        <section class="contact p-5">
+        <section class="contact py-5">
             <div class="container">
                 <h1 class="mb-5 text-center section-title">Contact <span class="highlight">Us</span></h1>
                 <div class="row">
@@ -472,10 +561,10 @@
 
 
     <!-- footer section start -->
-    <footer class="footer">
+    <footer class="footer py-5">
         <div class="container">
             <div class="row text-white">
-                <div class="col-md-6 my-auto">
+                <div class="col-md-6 footer-content">
                     <div class="list mb-3">
                         <a href="#">Download Now</a>
                         <a href="#">License</a>
@@ -489,7 +578,7 @@
                         <a href="#">PrivacyPolicy</a>
                     </div>
                 </div>
-                <div class="col-md-6 d-flex justify-content-md-end align-items-center gy-4 gy-md-0">
+                <div class="col-md-6 d-flex justify-content-md-end align-items-center gy-4 gy-md-0 footer-content">
                     <div class="footer-icons pe-4">
                         <h4>Get the App</h4>
                         <div class="my-4">
